@@ -1,0 +1,120 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+
+    
+}
+
+/* Page border */
+body {
+    min-height: 100vh;
+    border: 2px solid #2a5298; /* small border */
+    background: #f4f6f8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Form */
+.signup-form {
+    background: #f5f5f5;
+    width: 450px;
+    max-width: 90%;
+    padding: 35px;
+    border-radius: 8px;
+
+    /* 🌫️ Soft shadow */
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+
+/* Title */
+.signup-form h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color:#1e3c72;
+     font-family: 'Poppins', sans-serif;
+     
+}
+
+/* Spacing */
+.mb-3 {
+    margin-bottom: 20px;
+    margin-left: 10px;
+ 
+    
+}
+
+/* Labels */
+label {
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 4px;
+    font-size: 14px;
+    color: #333;
+  
+}
+
+/* Inputs */
+input {
+    width: 100%;
+    padding: 8px;
+    border-radius: 4px;
+    border: 1px solid #ddd6d6;
+    font-size: 14px;
+}
+
+input:focus {
+    outline: none;
+    border-color: #2a5298;
+}
+
+/* Button */
+button {
+    width: 100%;
+    margin-top: 15px;
+    padding: 10px;
+    background:   #1e3c72;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #5fa8bd;
+}
+#Img1{
+    display: block;          /* important */
+    margin: 0 auto 15px;     /* center horizontally */
+    width: 140px;    
+}
+.Class1{
+width: 320px;
+height: 40px;
+}
+.Class2{
+ width: 148px;
+height: 40px;
+}
+td{
+    padding-right: 20px;
+}
+label{
+    font-style: italic;
+
+}
+label,input{
+    padding-right: 40px;
+}
+span{
+    color: rgb(230, 16, 16);
+    font-size: medium;
+    margin-left: 5px;
+    margin-top: 5px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+}

@@ -4,6 +4,9 @@ import viteLogo from '/vite.svg'
 import LoginForm from './LoginForm'
 import './App.css'
 import Dashboard from './Pages/Dashboard'
+import Inscription from './components/Inscription'
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+
 
 function App() {
   const [count, setCount] = useState(0)
@@ -30,8 +33,15 @@ function App() {
       <p className="read-the-docs">
         Click on the Vite and React logos to learn more
       </p> */}
-      <LoginForm/>
+     
       {/* <Dashboard/> */}
+      
+     <BrowserRouter>
+      <Routes>
+        <Route path="/Inscription" element={<Inscription />} />
+        <Route path="/Login" element={<LoginForm />} />
+      </Routes>
+    </BrowserRouter>
     </>
   )
 }
