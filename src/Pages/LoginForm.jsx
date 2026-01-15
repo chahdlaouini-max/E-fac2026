@@ -1,14 +1,14 @@
 // LoginForm.jsx
 import React, { useState } from "react";
 import "./LoginForm.css"; // ton CSS existant
-
+import { useNavigate } from "react-router-dom";
 const LoginForm = () => {
   // State pour les inputs et les messages d'erreur
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [errorEmail, setErrorEmail] = useState("");
   const [errorPassword, setErrorPassword] = useState("");
-
+  const navigate = useNavigate();
   // Fonction de validation
   const verifierInformations = () => {
     let isValid = true;
@@ -66,6 +66,9 @@ const LoginForm = () => {
     alert("Connexion réussie!");
     // Ici tu peux rediriger vers une autre page avec React Router
     // ex: navigate("/valid");
+    localStorage.setItem("logged", "true");
+    //  Rediriger vers Dashboard après connexion
+    navigate("/dashboard");
   };
 
   return (
