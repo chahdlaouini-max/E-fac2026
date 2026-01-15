@@ -4,6 +4,7 @@ import { Routes, Route, Navigate } from "react-router-dom";
 import Home from "./Home.jsx";
 import LoginForm from "./LoginForm.jsx";
 import Dashboard from "./Dashboard.jsx";
+import Test from "../components/Test.jsx";
 
 function App() {
   
@@ -19,6 +20,7 @@ function App() {
     <Routes>
       <Route path="/" element={<Home />} /> 
       <Route path="/login" element={<LoginForm />} />
+      <Route path="/test" element={<Test />} />
       <Route
         path="/dashboard"
         element={
