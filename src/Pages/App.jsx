@@ -7,13 +7,13 @@ import Dashboard from "./Dashboard.jsx";
 
 function App() {
   
-  // const logged = localStorage.getItem("logged"); 
-  // const ProtectedRoute = ({ children }) => {
-  //   if (!logged) {
-  //     return <Navigate to="/login" />; 
-  //   }
-  //   return children;
-  // };
+  const logged = localStorage.getItem("logged"); 
+  const ProtectedRoute = ({ children }) => {
+    if (!logged) {
+      return <Navigate to="/login" />; 
+    }
+    return children;
+  };
 
   return (
     <Routes>
