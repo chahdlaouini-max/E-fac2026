@@ -40,6 +40,7 @@ function App() {
       <Routes>
         <Route path="/Inscription" element={<Inscription />} />
         <Route path="/Login" element={<LoginForm />} />
+        <Route path="/Dashboard" element={<Dashboard />} />
       </Routes>
     </BrowserRouter>
     </>
