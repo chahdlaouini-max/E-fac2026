@@ -1,7 +1,9 @@
 import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 import "../styles/PageInscription.css"; // IMPORT YOUR FULL CSS
 
 export default function Inscription() {
+  const navigate = useNavigate();
   const [form, setForm] = useState({
     email: "",
     prenom: "",
@@ -59,7 +61,7 @@ export default function Inscription() {
     localStorage.setItem("users", JSON.stringify(users));
 
     alert("Inscription réussie !");
-    window.location.href = "Test.jsx";
+    navigate("/login");
   };
 
   return (
