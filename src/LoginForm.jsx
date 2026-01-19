@@ -69,7 +69,7 @@ const LoginForm = () => {
   };
 
   return (
-    <form className="signup-form" onSubmit={handleSubmit}>
+    <form className="signup-form" onSubmit={handleSubmit} >
       <img src="image001.png" alt="" id="Img1" />
       <h2>Connexion</h2>
 

@@ -2,9 +2,10 @@ import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import LoginForm from './LoginForm'
-import './App.css'
+
 import Dashboard from './Pages/Dashboard'
 import Inscription from './components/Inscription'
+import Welcome from './Pages/Welcome'
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 
@@ -41,6 +42,7 @@ function App() {
         <Route path="/Inscription" element={<Inscription />} />
         <Route path="/Login" element={<LoginForm />} />
         <Route path="/Dashboard" element={<Dashboard />} />
+        <Route path="/Welcome" element={<Welcome />} />
       </Routes>
     </BrowserRouter>
     </>

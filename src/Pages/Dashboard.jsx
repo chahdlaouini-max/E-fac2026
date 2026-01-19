@@ -1,7 +1,9 @@
 import React, { useState } from 'react';
 import './Dashboard.css';
+import { useNavigate } from "react-router-dom";
 
 const Dashboard = () => {
+  const navigate = useNavigate(); // ← utilisé pour navigation
   const [sidebarOpen, setSidebarOpen] = useState(false);
   const [formData, setFormData] = useState({
     client: '',
@@ -17,8 +19,7 @@ const Dashboard = () => {
 
   const menuItems = [
     { id: 'facture', label: 'Facture' },
-    { id: 'modify-login', label: 'Modify Login' },
-    { id: 'profile', label: 'Profile' },
+    { id: 'modify-login', label: 'Compte' },
     { id: 'logout', label: 'Logout' },
     { id: 'parametres', label: 'Parametres' }
   ];
@@ -79,6 +80,11 @@ const Dashboard = () => {
   const handleMenuItemClick = (item) => {
     setActiveMenuItem(item);
     setSidebarOpen(false);
+
+    // 🔹 Redirection Logout vers Home (sans clear)
+    if (item === "Logout") {
+      navigate("/Login"); // ← redirection Home
+    }
   };
 
   return (

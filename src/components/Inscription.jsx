@@ -59,7 +59,7 @@ export default function Inscription() {
     localStorage.setItem("users", JSON.stringify(users));
 
     alert("Inscription réussie !");
-    window.location.href = "Test.jsx";
+    window.location.href = "Login";
   };
 
   return (
