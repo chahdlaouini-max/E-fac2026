@@ -29,8 +29,11 @@ db.connect((err) => {
 });
 
 // Test route
-app.get("/", (req, res) => {
+app.get("/ami", (req, res) => {
   res.send("API running 🚀");
+});
+app.get("/user", async (req, res) => {
+  
 });
 
 // Start server
