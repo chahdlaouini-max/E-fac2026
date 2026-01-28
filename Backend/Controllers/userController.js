@@ -1,5 +1,5 @@
 // controllers/userController.js
-const { createUser, getUserByEmailAndPassword } = require("../models/user");
+const { createUser, getUserByEmail } = require("../models/user");
 
 const register = (req, res, db) => {
   const { nom, prenom, telephone, email, password } = req.body;
@@ -17,11 +17,9 @@ const register = (req, res, db) => {
 
 const login = (req, res, db) => {
   const { email, password } = req.body;
-
-  getUserByEmailAndPassword(db, email, password, (err, results) => {
+  getUserByEmail(db, email, (err, results) => {
     if (err) return res.status(500).json({ message: "Erreur serveur" });
-
-    if (results.length > 0) {
+    if (results.length > 0 && results[0].password === password) {
       res.json({ message: "Connexion réussie !" });
     } else {
       res.status(401).json({ message: "Email ou mot de passe incorrect" });
