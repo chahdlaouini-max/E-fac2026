@@ -14,7 +14,7 @@ export default function Hero() {
         </h1>
 
         <div className="buttons">
-          <button className="btn inscription" onClick={() => navigate("git status/Inscription")}>Inscription</button>
+          <button className="btn inscription" onClick={() => navigate("/Inscription")}>Inscription</button>
           <button className="btn login" onClick={() => navigate("/login")}>Login</button>
         </div>
       </div>

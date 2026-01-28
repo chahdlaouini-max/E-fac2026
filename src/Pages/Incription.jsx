@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
-import "../styles/PageInscription.css"; // IMPORT YOUR FULL CSS
+// import "../styles/PageInscription.css"; 
 
 export default function Inscription() {
   const navigate = useNavigate();

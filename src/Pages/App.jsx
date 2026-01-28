@@ -6,7 +6,7 @@ import Home from "./Home.jsx";
 import LoginForm from "./LoginForm.jsx";
 import Dashboard from "./Dashboard.jsx";
 import Test from "./Test.jsx";
-import Inscription from "./Inscription.jsx";
+import Inscription from "./Incription.jsx";
 
 function App() {
   const logged = localStorage.getItem("logged");
@@ -23,7 +23,7 @@ function App() {
       <Route path="/" element={<Home />} />
       <Route path="/login" element={<LoginForm />} />
       <Route path="/test" element={<Test />} />
-      <Route path="/register" element={<Inscription />} />
+      <Route path="/Inscription" element={<Inscription />} />
       <Route
         path="/dashboard"
         element={
